@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar" id="acrylic">
+        <dialog id="projectDialog">
+            <form>
+                <p>
+                    <label>
+                        New Project:
+                        <input type="text" name="project" id="project" required minlength="2">
+                    </label>
+                </p>
+                <p>
+                    <button type="button" id="createProject">Submit</button>
+                </p>
+            </form>
+        </dialog>
+        <dialog id="taskDialog">
+            <form>
+                <p>
+                    <label>
+                        New Task:
+                        <input type="text" required id="newTask">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Description: 
+                        <textarea name="description" id="description" rows="3" cols="50"></textarea>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Date:
+                        <input type="date" id="date">
+                    </label>
+                </p>
+                
+                <button id="createTask" type="submit">Submit</button>
+            </form>
+        </dialog>
+        <button class="side" id="newProject">+ New Project</button>
+        <button class="side" id="Personal">Personal</button>
+        <button class="side" id="Shopping">Shopping</button>
+    </div>
+    <div class="content" id="acrylic">
+
+    </div>
+</body>
+</html>
